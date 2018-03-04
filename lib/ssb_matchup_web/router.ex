@@ -7,5 +7,6 @@ defmodule SsbMatchupWeb.Router do
 
   scope "/api", SsbMatchupWeb do
     pipe_through :api
+    resources "/boards", BoardController
   end
 end
